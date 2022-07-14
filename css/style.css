@@ -1,0 +1,54 @@
+html,body{
+    padding: 0;
+    margin: 0;
+
+}
+
+:root{
+    --primary-color:#e50914;
+    --secondary-color:#fff;
+    --background-card:#303030;
+    --footer-text:#737373;
+    --border-color:8px solid #222;
+}
+
+
+.mybutton{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    font-size: 12px;
+    padding: .1rem .5rem;
+    font-weight: 500;
+    border-radius: 3px;
+    
+}
+.mybutton:hover{
+    color: black;
+    background-color: white;
+}
+
+
+/* hero section */
+.hero-section{
+    background-image: url(/images/hero-bg.jpg);
+    width: 100%;
+    height: auto;
+}
+
+
+/* heading style */
+h1,p{
+    color: var(--secondary-color);
+}
+
+input{
+    border: none;
+    font-size: 15px;
+    border-radius: 2px;
+    padding: 3px 34px;
+}
+
+
+
+/* standard breakpoint */
