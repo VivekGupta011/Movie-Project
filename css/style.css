@@ -1,54 +1,179 @@
-html,body{
-    padding: 0;
-    margin: 0;
-
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
 }
 
-:root{
-    --primary-color:#e50914;
-    --secondary-color:#fff;
-    --background-card:#303030;
-    --footer-text:#737373;
-    --border-color:8px solid #222;
+:root {
+  --primary-color: #e50914;
+  --secondary-color: #fff;
+  --background-card: #303030;
+  --footer-text: #737373;
+  --border-color: 8px solid #222;
 }
 
-
-.mybutton{
-    text-decoration: none;
-    color: white;
-    background-color: red;
-    font-size: 12px;
-    padding: .1rem .5rem;
-    font-weight: 500;
-    border-radius: 3px;
-    
+.mybutton {
+  padding: 0.3rem .9rem;
+  font-size: 22px;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #e50914;
+  color: white;
+  border-radius: 3px;
 }
-.mybutton:hover{
-    color: black;
-    background-color: white;
+a.mybutton:hover {
+  color: black;
+  background-color: white;
 }
-
 
 /* hero section */
-.hero-section{
-    background-image: url(/images/hero-bg.jpg);
-    width: 100%;
-    height: auto;
+.hero-section {
+  background-image: url(/images/hero-bg.jpg);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
 }
 
 
+
+
+
+/* 
+images responsive */
+
+
+img#myimg {
+  height: 119px;
+  }
+
+/* bootstrap css overwrite */
+
+.h1,
+h1 {
+  font-size: calc(1.40rem + 2.9vw);
+}
 /* heading style */
-h1,p{
-    color: var(--secondary-color);
+h1,
+p {
+  color: var(--secondary-color);
 }
 
-input{
-    border: none;
-    font-size: 15px;
-    border-radius: 2px;
-    padding: 3px 34px;
+input {
+  border: none;
+  font-size: 20px;
+  border-radius: 2px;
+  padding: 17px 85px 17px 9px;
+  margin: 12px 5px;
+  height: 48px;
+}
+
+.hero-text.text-center {
+  padding: 4px 18% 152px;
+  margin: 13px 7px;
 }
 
 
+/* mybutton */
 
+a.mybutton1 {
+  color: white;
+  text-decoration: none;
+  background: red;
+  padding: .8rem 0rem .7rem .7rem;
+  font-size: 17px;
+  font-weight: 500;
+  position: relative;
+  left: -11px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  border-left: 1px solid black;
+}
+/* mybutton-X */
+
+/* boxicons icon */
+i.bx.bx-chevron-right {
+  font-size: 36px;
+  position: relative;
+  bottom: -10px;
+  left: -9px;
+}
+/* boxicons icon_x*/
+
+
+
+
+/* Typography */
+
+p.hero-text {
+  font-size: 1.625rem;
+}
+
+
+.small, small {
+  font-size: 1.2rem;
+}
+/* Typography-X */
 /* standard breakpoint */
+
+@media(min-width:1440px) {
+ 
+}
+
+@media(min-width:1024px) {
+  .hero-text.text-center {
+    padding: 4px 19% 152px !important;
+    margin: 13px 7px !important;
+}
+  
+}
+
+@media screen and(min-width:950px) and (max-width:1024px) {
+  
+  
+}
+
+@media(min-width:768px) {
+  .hero-text.text-center {
+    padding: 4px 13% 152px;
+    margin: 13px 7px;
+}
+  
+
+  
+}
+@media(max-width:768px) {
+  img#myimg {
+     height: 65px;
+  }
+  .mybutton{
+    font-size: 15px;
+    padding: 0.2rem .5rem;
+  }
+  .hero-text.text-center {
+    padding: 4px 4% 152px;
+    margin: 13px 7px;
+}
+p.hero-text {
+  font-size: 1.325rem !important;
+}
+.small, small {
+  font-size: .9rem;
+  font-weight: 400;
+}
+input {
+  border: none;
+  font-size: 17px;
+  border-radius: 2px;
+  padding: 17px 85px 17px 9px;
+  margin: 12px 5px;
+  height: 48px;
+  width: 100%;
+  right: 11px;
+  position: relative;
+}
+}
+
+@media(max-width:425px) {
+}
