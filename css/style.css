@@ -67,10 +67,10 @@ images responsive */
 
 /* bootstrap css overwrite */
 
-.h1,
+/* .h1,
 h1 {
   font-size: calc(1.175rem + 2.9vw) !important;
-}
+} */
 /* heading style */
 h1,
 p {
@@ -104,17 +104,17 @@ input {
   max-width: 100% !important;
 }
 .main-video-container {
-  height: 100%;
-  width: 52%;
   box-sizing: border-box;
+  display: flex;
   flex: 0 1 auto;
+  height: 100%;
+  width: 48%;
 }
 video.media-video {
   width: 100%;
   height: 100%;
 }
 .media-video-div {
-  position: absolute;
   height: 100%;
   left: 50%;
   max-height: 54%;
@@ -133,6 +133,9 @@ img.col-two-images.video-img{
 .our-story-card-animation {
   position: absolute;
   top: 0;
+}
+.d-md-flex.custom-margin {
+  margin-left: 15%;
 }
 /* media-X */
 
@@ -192,6 +195,30 @@ small {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 1320px !important;
 }
+.media-video-div {
+  height: 100% ;
+  left: 33% ;
+  max-height: 54% ;
+  max-width: 100% ;
+  position: absolute ;
+  top: 48% ;
+  transform: translate(-50%,-50%) ;
+  width: 100% ;
+}
+
+}
+@media(min-width:1200px){
+  .media-video-div {
+    height: 100% !important;
+    left: 33% !important;
+    max-height: 54% !important;
+    max-width: 100% !important;
+    position: absolute !important;
+    top: 48% !important;
+    transform: translate(-33%,-50%) !important;
+    width: 100% !important;
+}
+
 }
 
 @media (min-width: 1024px) {
@@ -202,17 +229,7 @@ small {
   .container.custom-container.video-section {
     margin: 0px 2%;
 }
-.media-video-div {
-  position: absolute;
-  height: 100%;
-  left: 33%;
-  max-height: 54%;
-  max-width: 81%;
-  position: absolute;
-  top: 48%;
-  transform: translate(-35%,-49%);
-  width: 100%;
-}
+
 .container.custom-container.video-section {
   margin: 0px 4%;
 }
@@ -261,6 +278,7 @@ small {
   .container.custom-container.video-section {
     margin: 0px 1%;
 }
+
 
   .d-md-flex.custom-flex {
     flex-direction: row-reverse;
@@ -338,6 +356,23 @@ h1.frequently-question {
     font-size: 15px;
     padding: 0.2rem 0.5rem;
   }
+  .media-video-div {
+    height: 100% !important;
+    left: 50% !important;
+    max-height: 54% !important;
+    max-width: 73% !important;
+    position: absolute !important;
+    top: 46% !important;
+    transform: translate(-51%, -50%) !important;
+    width: 100% !important;
+}
+  .main-video-container {
+    height: 100%;
+    width: 77%;
+    box-sizing: border-box;
+    position: relative;
+    right: -8%;
+}
   .hero-text.text-center {
     padding: 4px 4% 36px;
     margin: 13px 7px;
