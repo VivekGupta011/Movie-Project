@@ -14,7 +14,7 @@ body {
 }
 
 .mybutton {
-  padding: 0.2rem 0.7rem;
+  padding: 0.3rem 0.8rem;
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;
@@ -29,12 +29,13 @@ a.mybutton:hover {
 
 /* hero section */
 .hero-section {
-  background-image: url(/public/images/hero-bg.jpg);
+  background-image: url(./images/hero-bg.jpg);
   width: 100%;
   height: auto;
   background-size: cover;
   border-bottom: 6px solid #222;
 }
+
 
 /* 
 
@@ -200,6 +201,34 @@ small {
   font-size: 1.1rem;
 }
 /* Typography-X */
+
+
+/* footer */
+li{
+  list-style: none;
+  display: inline-block;
+}
+li a{
+  text-decoration: none;
+  color: #737373;
+
+}
+li.footer-anchor{
+   color: #737373;
+   text-align: left;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 16px;
+    min-width: 100px;
+    padding: 0 17px 0 0;
+    width: 32%;
+
+}
+.footerbottom-text {
+  display: flex;
+  justify-content: space-between;
+}
+/* footer-X */
 /* standard breakpoint */
 
 @media (min-width: 1440px) {
@@ -363,10 +392,23 @@ h1.frequently-question {
   img#myimg {
     height: 65px;
   }
-  .mybutton {
-    font-size: 15px;
-    padding: 0.2rem 0.5rem;
-  }
+
+  br {
+    display: none;
+}
+.col-12.d-flex.justify-content-between.my-2 {
+  flex-direction: column;
+  align-items: center;
+}
+.mybutton {
+  padding: 0.3rem 0.8rem;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  background-color: #e50914;
+  color: white;
+  border-radius: 3px;
+}
   .media-video-div {
     height: 100% !important;
     left: 50% !important;
@@ -392,8 +434,11 @@ h1.frequently-question {
     font-size: 1.325rem !important;
   }
   .small, small {
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 400;
+}
+p.footer-text {
+  font-size: 14px;
 }
   input {
     border: none;
@@ -478,6 +523,23 @@ h1.frequently-question {
  
 }
 
+@media(max-width:576px){
+  li.footer-anchor {
+    color: #737373;
+    text-align: left;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-bottom: 11px;
+    min-width: 100px;
+    padding: 0 17px 0 0;
+    width: 27%;
+}
+p.join-msg {
+  display: none !important;
+}
+}
+
+
 @media (max-width: 425px) {
   p.two-col-section-text {
     font-size: 1rem;
@@ -487,6 +549,10 @@ h1.frequently-question {
   h1 {
     font-size: calc(1.5rem + 1.5vw);
   }
+  li.footer-anchor {
+   
+    width: 47%;
+}
 }
 
 /* target media query */

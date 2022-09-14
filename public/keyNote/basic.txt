@@ -1,6 +1,0 @@
-1.first we have to start npm =>init npm
-2.you have to write your project name for get more information about your project=>netflix-clone
-3.install express library for create server and "nodemon" for running server=>npm i express.js nodemon
-
-Note:NODEMON is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected
-Note:package-lock.json is automatically generated for any operations where npm modifies either the node_modules tree or package.json
