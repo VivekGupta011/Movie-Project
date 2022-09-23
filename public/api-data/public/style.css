@@ -190,6 +190,10 @@ p.two-col-section-text {
 }
 /* col-2 section-X */
 
+.movie-info{
+  background-image: url(/public/images/avengerbgimage.jpg);
+}
+
 /* Typography */
 
 p.hero-text {

@@ -29,11 +29,13 @@ const makeCategoryElement = (category, data) => {
 
         <button class="pre-btn"><img src="img/pre.png" alt=""></button>
 
+        <a href="./about.html">
         <h1 class="movie-category">${category.split("_").join(" ")}</h1>
 
         <div class="movie-container" id="${category}">
 
         </div>
+        </a>
 
         <button class="nxt-btn"><img src="img/nxt.png" alt=""></button>
 
