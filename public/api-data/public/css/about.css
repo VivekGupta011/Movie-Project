@@ -51,9 +51,10 @@
     margin-bottom: 20px;
 }
 
-iframe{
+iframe {
     width: 400px;
     height: 200px;
+    margin: 10px 5px;
 }
 
 .recommendations-container{
